@@ -48,6 +48,16 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     footer{
         color: lightgray;
     }
+    .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
       /* EXERCISE 1
             For every Album we'd like to have a consistent style.
             Create a class for:
@@ -77,15 +87,20 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#albums">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#mosaic">Mosaic</a>
+                    </li>
                 </ul>                
                 </div>
             </div>
         </nav>
     <h1 class="text-center">My favourite Albums</h1>
+<div class="container">
     <div class="container container-fluid" id="albums">
         <div class="row">
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -95,13 +110,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
-                    <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><a href="https://music.apple.com/de/album/anthrazit-rr/1323996480?l=en"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></a></button>
+                    <button type="button" onclick="location.href='https://en.wikipedia.org/wiki/Anthrazit_(album)'" class="btn btn-secondary">More Info</button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -111,13 +126,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -127,13 +142,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -143,13 +158,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -159,13 +174,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -175,13 +190,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -191,13 +206,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -207,13 +222,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -223,13 +238,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -239,13 +254,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -255,13 +270,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
             <div class="card col-12 col-sm-6 col-md-4 col-l-3">
-                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" class="card-img-top square" alt="...">
+                <img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" class="card-img-top square" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title">Anthrazit RR</h5>
                     <ul>
@@ -271,13 +286,39 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </ul>
                 </div>
                 <div class="btn-group container-fluid p-3">
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/ios-glyphs/50/000000/itunes.png" width="100%"/></button>
                     <button type="button" class="btn btn-secondary">More Info</button>
-                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png"/></button>
+                    <button type="button" class="btn btn-secondary"><img src="https://img.icons8.com/material-rounded/50/000000/spotify.png" width="100%"/></button>
                     </div>
             </div>               
         </div>
     </div>
+    <div id="mosaic" class="container-fluid pt-5">
+        <div class="row no-gutters">
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images-na.ssl-images-amazon.com/images/I/61bEYjtgT9L.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://hiphopnewshun.files.wordpress.com/2013/10/bs8o_pdcqaa37e6.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+            <div class="col-6 col-md-4"><img src="https://images.genius.com/b152f99ec0c167cba06d7691b153e1d4.960x960x1.jpg" width="100%" height="100%" ></div>
+        </div>
+    </div>
+</div>
     <footer class="page-footer bg-dark">
         <div class="container">
             <div class="row d-flex justify-content-center">
